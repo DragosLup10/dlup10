@@ -1,3 +1,7 @@
+#Dragos Lup, Ryan Ma, Jeffery Huang
+#SoftDev
+#K05 -- Teamwork, but Better This Time
+#2020-09-28
 import random
 KREWES = {
     'orpheus': ['ERIC', 'SAUVE', 'JONATHAN', 'PAK', 'LIAM', 'WINNIE', 'KELLY', 'JEFFREY', 'KARL', 'ISHITA', 'VICTORIA', 'BENJAMIN', 'ARIB', 'AMELIA', 'CONSTANCE', 'IAN'],
