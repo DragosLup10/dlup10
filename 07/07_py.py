@@ -7,6 +7,14 @@
 # then create a function that returns the jobs weighted
 # by the percentages given.
 
+#The first thing we did is take the csv file and convert it to a pseudo-dictionary
+#The pseudo-dictionary isn't very usuable in its current form, so we then convert it into
+#a real dictinary. After we convert it, we pick a random number. This random number is from
+#0 to 100, because of precentages. Then we start adding the chances. The way the chance
+#works is every time a value for chance is taken, we add it to the variable to make it
+#bigger. The bigger chances have a higher chance of counting as a "success", as intended.
+
+
 # Import the neccesary modules
 import csv
 import random
