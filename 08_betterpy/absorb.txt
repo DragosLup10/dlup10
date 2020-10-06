@@ -1,0 +1,12 @@
+Team Gummy Bear - Dragos Lup, Kelly Huang
+SoftDev
+K08 -- Cross Pollination and Virtual Insanity Alpha
+
+A lot of groups used reader and DictReader to read their dictionaries.
+Some people did "with open()" which is good.
+The answers to get rid of the first and last row were very different, some people had a specific range, others popped those rows, others just had an if statement.
+There were some very clean answers, like Team "Ethan and Dean", whose code looked really nice
+People either did adding the percentages in a loop (like us), or using the random.choices method. They're technically the same, but the random choices method seems a lot better
+Also saw randrange, which we think is similar as random choice.
+Some people used the F string method which formats strings.
+A lot of groups used the split function to format the file instead of using DictReader.

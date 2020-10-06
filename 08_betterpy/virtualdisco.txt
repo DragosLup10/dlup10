@@ -1,0 +1,13 @@
+Team Gummy Bear - Dragos Lup, Kelly Huang
+SoftDev
+K08 -- Cross Pollination and Virtual Insanity Beta
+
+The command "python3 -m venv ~/myherozero" creates a virtual environment, which is a new self-contained workspace that has its own packages and setup.
+The virtual environment will be created in the directory "myherozero" which stores the files and library for the virtual environment.
+The environment needs to be activated with the line "source ~/myherozero/bin/activate". Once you activate the environment, the terminal will change prompt to one of the virtual enviornments, using its version.
+The virual environment is useful when you don't want all of your packages to be installed globally, as different projects require different versions of python.
+You can manage the packages with pip, which installs, upgrades and removes packages.
+
+Sources
+https://docs.python.org/3/tutorial/venv.html
+https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/
