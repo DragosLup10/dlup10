@@ -1,0 +1,16 @@
+# Team Gummy Bear : Dragos Lup, Kelly Huang
+# SoftDev
+# K09 -- Simple Path to Greatness
+# 2020-10-08
+
+Q0: It looks sort of similar to a function in java, where "__name__" is the parameter being given to the function "Flask".
+
+Q1: "/" is usually used to represent a directory, and is also used in websites to show subpages, and marking homepages like "https://github.com/"
+
+Q2: Because of the "@app.route("/")", we think this will print in the home directory. If not then the terminal.
+__main__ was printed in the terminal once we closed the session.
+
+Q3: This will print "__main__" and the name of the file. The print statement will appear in the app.
+"No hablo Queso" appeared on the app, as expected. __main__ was in the terminal.
+
+Q4: Java's dot operator.
