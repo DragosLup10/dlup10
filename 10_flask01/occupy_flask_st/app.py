@@ -1,3 +1,7 @@
+# Team Gummy Bear : Dragos Lup, Kelly Huang
+# SoftDev
+# K10 -- Putting Little Pieces Together
+# 2020-10-13
 import csv
 import random
 from flask import Flask

@@ -1,0 +1,13 @@
+# Team Gummy Bear : Dragos Lup, Kelly Huang
+# SoftDev
+# K11 -- Some Things Never Change
+# 2020-10-15
+
+Predictions:
+Both foo and foo.html do not have @app.routes, so we're assuming the local host won't run them. Unless folders named static are ran anyway, which is probably the case. We think foo won't run since it's not a .txt, or it might do something unintended.
+
+Notes:
+Foo is downloaded, because there is no file extension.
+We tried using folders named things other than static, and they weren't ran, static seems to be a specific name
+We originally thought app.py was also a specific name, but we realized that the only reason it ran on / is because of app.route
+notes.txt doesn't run in the host.

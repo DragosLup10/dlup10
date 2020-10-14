@@ -1,0 +1,11 @@
+# Team Gummy Bear : Dragos Lup, Kelly Huang
+# SoftDev
+# K12 -- ...or The Only Constant is Change?
+# 2020-10-15
+
+Predictions
+We predict that the template won't load the webpage very well. There are a bunch of brackets that don't really look like code, but it seems that variables will replace them.
+
+Notations
+The file runs on http://127.0.0.1:5000/my_foist_template, which makes sense, but we didn't really expect http://127.0.0.1:5000/ to also run. In hindsight it only makes sense that it does, but it's still weird to have one file load more than one webpage.
+The html is written well, in what seems to be a for loop of source in model_tmplt.html, along with other pieces of code that the templates might be loading.
