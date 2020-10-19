@@ -1,0 +1,15 @@
+# Team Bad (Ari Schechter, Dragos Lup, Benjamin Gallai)
+# K13: Template for success - Display a random job occupation at the top of the page and
+# display a table of all job occupations
+# 2020-10-19
+
+
+Notes on tablified.html:
+* The jinja2 documentation is almost as bad as the syntax
+
+Notes on egoless programming: 
+* Dragos likes having friends :) (social interaction is vital)
+* Programs are objective 
+* Constructive criticism good
+* Harder to find errors when you're alone - others can help (duck debugging)
+* Don't be aggresive when you find errors
