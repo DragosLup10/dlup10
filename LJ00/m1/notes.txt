@@ -1,0 +1,32 @@
+#Team BAD (Ari Schechter, Benjamin Gallai, Dragos Lup)
+#SoftDev
+#LJ00: Le Voyage de Learnination avec Mongo, Première Phase - First steps with MongoDB
+#2020-10-21 to 2020-10-29
+
+Lecture -1: Welcome to M001
+Thanks
+
+Lecture 0: What is the MongoDB database?
+MongoDB is a no SQL, document based database. It uses collections which contain documents to store data rather than tables with rows and columns.
+Collection - an organized store of documents in MongoDB usually with common fields between documents. There can be many collections per database and many documents per collection.
+
+Lecture 1: What is a document in MongoDB?
+Document - a way to organize and store data as a set of field-value pairs.
+Field - a unique identifier for a datapoint.
+Value - data related to a given identifier.
+A database contains many collections which contain documents (field/value pairs), usually with common fields between documents
+
+Lecture 2: What is MongoDB Atlas?
+Atlas is a cloud database with MongoDB at its core
+Atlas users deploy clusters (groups of servers) that store your data
+Replica Set - a few connected machines that store the same data to ensure that if something happens to one of the machines the data will remain intact.
+Instance - a single machine locally or in the cloud, running a certain software, in our case it is the MongoDB database.
+Why Atlas?
+Manages cluster creation
+Run and maintain database deployment
+Use cloud service provider of your choice
+Experiment with new MongoDB features
+
+Lab 0: Create and deploy an Atlas server
+Free version limited to 512MB of data and can only be on the cloud
+Uses a few server providers around the world. You choose the one that is closest to you
