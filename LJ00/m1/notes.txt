@@ -30,3 +30,16 @@ Experiment with new MongoDB features
 Lab 0: Create and deploy an Atlas server
 Free version limited to 512MB of data and can only be on the cloud
 Uses a few server providers around the world. You choose the one that is closest to you
+
+Lecture 3: Atlas User Interface Overview
+Not much here, coming back to realms and charts later
+Click on the collections button to access collections
+
+Lecture 4: Introducing the in-browser IDE
+Some of the work and testing will be done in an in-browser IDE
+Has a file browser on the left, terminal and test results to see how you did
+
+Lab 1: Connect to your Atlas cluster
+Connect to the mongo shell using the in-browser IDE
+Copy the connection link into the shell and replace <dbname> with the name of your database
+Then enter your password and you should have access to the shell
