@@ -1,0 +1,59 @@
+﻿#Team BAD (Ari Schechter, Benjamin Gallai, Dragos Lup)
+#SoftDev
+#LJ00: Le Voyage de Learnination avec Mongo, Première Phase - First steps with MongoDB
+#2020-10-21 to 2020-10-29
+
+
+Lecture 0: How does MongoDB store data?
+* JSON: Javascript standard object notation
+   * This is what the in-browser IDE uses
+   * Start and end with curly brace {}
+   * Separate each key and value with a colon :
+   * Separate each key:value pair with a comma ,
+   * “keys” must be surrounded by quotation marks “ “
+* Sub-document is a field that contains another document as it’s associated value
+* Pros:
+   * Friendly, Readable, Familiar
+* Cons:
+   * Text-based (slow)
+   * Takes up a lot of space
+   * Limited data types
+* BSON: binary JSON
+   * Bridges the gap between binary and JSON
+   * Optimized for speed, space and flexibility
+
+
+Lecture 1: Importing and Exporting Data
+* URI string - Uniform Resource Identifier
+   * Used to establish a strong secure connection with the mongoDB database
+   * mongodb+srv://user:password@clusterURI.mongodb.net/database
+      * Must specify username, password, clusterURI and database name
+* mongorestore -- uri “<Atlas Cluster URI>”
+   * --drop dump
+   * Imports data in BSON dump
+* mongoimport --uri “<Atlas Cluster URI>”
+   * --drop=<filename>.json
+   * Imports data in JSON
+* mongodump --uri”<uri-string>”
+   * Exports data in BSON
+* mongoexport --uri “<Atlas Cluster URI>”
+   * Exports data in JSON
+
+
+Lecture 2: Data Explorer
+* The name of each collection is written as <dbname>.<collection-name> for example sample_training.companies refers to the companies collection in the sample_training database.
+* Atlas UI provides us with Data Explorer so that we can query data using the GUI
+* Queries must use valid JSON
+* Use the filter to narrow down data when looking inside a collection. Syntax for this is {“field name”:”expected value”} for example if you are looking for all the data where the state is New York you would filter by {“state”:”New York”} 
+
+
+Lecture 3: Find command
+* To connect to a db, use mongo <uri string>
+* show dbs lists all the databases in the mongoDB you connected to
+* To use one of them: use <dbname>
+* show collections lists all the collections in the current database
+* To query, use db.<collection_name>.find( {“field_name”:”expected_value”} )
+   * We can just use db since we already navigated to a singular database when we used the use <dbname> command.
+   * The results will come up in groups of 20 just like on the website GUI. To view the next 20 use it (short for iterate)
+* We can also count how many values a particular field has using                         db.<collection name>.find( {“field name”} ).count() 
+* To format the data nicely we can use db.<collection name>.find( <query> ).pretty()
