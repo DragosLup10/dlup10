@@ -1,0 +1,14 @@
+﻿#Team DPS (Dragos Lup, Saqif Abedin, Pak Lau)
+#SoftDev
+#LJ01: Le Voyage de Learnination avec Mongo, Deuxième Phase - Second steps with MongoDB
+#2020-10-29 to 2020-11-12
+
+
+Lecture 0:
+* Every document must have a unique id_value
+* You can make every value in every document identical, but the _id value MUST be different.
+* M320 - Data Modeling will teach you about how to structure data
+* ObjectId()
+   * Default value for _id field unless otherwise specified.
+   * Ex. “_id: ObjectId:”56byhugbwytbs7ub76sb8ab7gs6bd8”
+* Click Insert Document, and type in whatever you want to put in.
