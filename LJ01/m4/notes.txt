@@ -3,8 +3,6 @@
 #LJ01: Le Voyage de Learnination avec Mongo, Deuxième Phase - Second steps with MongoDB
 #2020-10-29 to 2020-11-12
 
-mongo "mongodb+srv://sandbox.7vkp8.mongodb.net/<dbname>" --username m001-student
-m001-mongodb-basics
 Operators:
 	$eq: Equal to
 	$neq: Not Equal to
