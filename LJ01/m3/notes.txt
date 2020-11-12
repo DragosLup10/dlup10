@@ -1,14 +1,31 @@
-﻿#Team DPS (Dragos Lup, Saqif Abedin, Pak Lau)
+#Team DPS (Dragos Lup, Saqif Abedin, Pak Lau)
 #SoftDev
 #LJ01: Le Voyage de Learnination avec Mongo, Deuxième Phase - Second steps with MongoDB
 #2020-10-29 to 2020-11-12
 
-
-Lecture 0:
-* Every document must have a unique id_value
-* You can make every value in every document identical, but the _id value MUST be different.
-* M320 - Data Modeling will teach you about how to structure data
-* ObjectId()
-   * Default value for _id field unless otherwise specified.
-   * Ex. “_id: ObjectId:”56byhugbwytbs7ub76sb8ab7gs6bd8”
-* Click Insert Document, and type in whatever you want to put in.
+Every document has a unique _id value
+    - ObjectId(), default _id value type 
+	- _id doesn't have to be of this type.
+findOne() finds a random document to see the format or you can add a query to find.
+	- If multiple are found that fit the query, it will choose the first one
+You cannot insert documents with the same _id field into a collection
+A random _id will be put in if you insert a document without an _id
+You can place multiple documents into a collection but insert([<>,<>,<>]) (arrays)
+When inserting multiple documents with the same _id, only the first is inserted, the rest don't regardless of whether or not they have separate _id values
+    - insert([], {"ordered": false}) inserts all documents, then provides errors to duplicates
+You can insert documents or databases into a collection that don't exist and it will create a new one for you
+We can update documents
+    - updateOne() only updates the first document it can find given a query
+    - updateMany() updates all documents that matches a query
+        - updateMany(), first parameter is the query, second is what's being updated
+            - {"$inc": {"pop": 10}} increments the population by 10
+                - $inc also takes in multiple fields
+            - {"$set": {"pop": 17630}} updates the population to 17630
+                - also adds the field to the document if it doesn't exist
+                - $set can also take in multiple fields
+            - {"$push": {"scores" : {"type": "extra credit", "score", 100}} adds an element to an array field
+We can delete documents
+    - deleteOne() should really only be used with the _id query
+    - deleteMany() takes in a query and deletes all files that have that field
+drop() deletes collections
+Removing all collections in a database also removes the database

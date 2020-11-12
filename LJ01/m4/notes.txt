@@ -1,0 +1,35 @@
+#Team DPS (Dragos Lup, Saqif Abedin, Pak Lau)
+#SoftDev
+#LJ01: Le Voyage de Learnination avec Mongo, Deuxième Phase - Second steps with MongoDB
+#2020-10-29 to 2020-11-12
+
+mongo "mongodb+srv://sandbox.7vkp8.mongodb.net/<dbname>" --username m001-student
+m001-mongodb-basics
+Operators:
+	$eq: Equal to
+	$neq: Not Equal to
+	$gt: Greater than
+	$lt: Less Than
+	$gte: Greater than or equal to
+	$lte: Less than or equal to
+	{<field>:{<operator>:<value>}}
+	
+Logic Operators:
+	$and (default operator)
+	$or
+	$nor
+		-All use {<operator>:[{statement1},{statement2},..]}
+	$not
+		-$not: {statement}}
+		
+Other Operators:
+	- $expr allows us to use aggregation expressions in the query language, and also use variables and conditional statements
+        -$ also denotes a field value ("$founded_year")
+    - $size = size of an array ({"size": 20})
+    - $all = matches arrays that contain the elements mentioned in the query ({"$all": ["Internet", "Wifi", ...]})
+    - find() takes in a second argument, which is the projection, it is fields that are shown in the documents that match the find query
+		-find({stuff},{stuff you want to see:1})
+		-can also be 0, if you dont want to see it
+    - $elemMatch = matches documents that has arrays that contain the specified queries ({<field>: {$elemMatch: {<query1>, <query2>, ...}}})
+    - we can use . notation for arrays ({"start station location.type": "Point"})
+    - $regex used for pattern matching strings
