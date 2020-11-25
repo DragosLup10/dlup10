@@ -1,0 +1,51 @@
+﻿#Team BAD (Ari Schechter, Benjamin Gallai, Dragos Lup)
+#SoftDev
+#LJ02: Le Voyage de Learnination avec Mongo, Troisième Phase - Indexing and Aggregation
+#2020-11-12 to 2020-11-25
+
+
+Lecture 0: Aggregation Framework
+* Everything we do in the MongoDB Query Language can be done in the MongoDB Aggregation Framework
+* Same command twice, first in MongoDB Query Language, second in Aggregation
+   * db.listingsAndReviews.find({ "amenities": "Wifi" },
+                           { "price": 1, "address": 1, "_id": 0 }).pretty()
+   * db.listingsAndReviews.aggregate([
+                                  { "$match": { "amenities": "Wifi" } },
+                                  { "$project": { "price": 1,
+                                                  "address": 1,
+                                                  "_id": 0 }}]).pretty()
+* With Aggregation, it works like an array where position and order matter. The pipeline will go through the operations in the order they are presented so in the case of the example, first the match and then the project.
+* The $group operator allows us to organize results into groups. Take for example the airbnb database. There is a small list of countries that is repeated many times throughout the data. To get a list of the countries, we can use the $group operator.
+   * db.sample_aibnb.listingsAndReviews.aggregate([
+{$project: {“address”: 1, “_id”:0}},
+{$group: {_id: “$address.country”}} ])
+* This operation shows a list of countries by grouping each document with the same country with each other.
+
+
+Lecture 1: sort() and limit()
+* .sort() sorts the the data by a certain criteria
+   * .sort({“pop”:1}) sorts the data by population
+      * A negative sort makes it go backwards, so the most populated areas are first
+   * db.zips.find().sort({ "pop": 1 })
+      * Sorts the entire data set by population
+* .limit() limits the amount of data that can be given
+   * .limit(1) gives one data piece
+   * db.zips.find().sort({ "pop": 1 }).limit(1)
+
+
+Lecture 2: Introduction to Indexes
+* Creating Indexes allows MongoDB to be a lot more efficient in your searches. 
+   * For example, creating an index of birth years would allow mongoDB to not have to look at every single birth year when you query, just the index.
+* It also allows you to avoid sorting.
+* Compound indexes allow you to greatly reduce run times and increase efficiency.
+
+
+Lecture 3: Intro to data modeling
+* Data modeling is a way to organize fields in a document to increase application performance.
+* Important rule: data is stored in the way that it is used.
+
+
+Lecture 4: Upsert - update or insert?
+* In MQL, anything we use to find a document can also be used to modify that document.
+* Upsert allows you to update a matching a document or insert a new one if no matches are found
+* It’s important to be careful with upsert as you have to consider what happens when you insert a new document. If you have a data set where all the documents have matching formats and fields and you are only trying to update one of them with upsert, you might end up creating a new document with just that field which would ruin the continuity of the data set.

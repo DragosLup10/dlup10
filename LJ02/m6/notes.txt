@@ -1,0 +1,34 @@
+﻿#Team BAD (Ari Schechter, Benjamin Gallai, Dragos Lup)
+#SoftDev
+#LJ02: Le Voyage de Learnination avec Mongo, Troisième Phase - Indexing and Aggregation
+#2020-11-12 to 2020-11-25
+
+
+Lecture 0: Atlas features
+* Indexes tab shows indexes, allows you to drop them, see who made them and analyze usage
+* The schema and anti-pattern tab will provide you with solid analysis of your data model once you have queried against your data enough times
+* The aggregation tab allows you to build aggregation pipelines with the GUI
+
+
+Lecture 1: Atlas products and options
+* Realm allows developers to build web and mobile applications with mongoDB
+* Chart allows you to visualize your data through graphs and charts.
+
+
+Lecture 2: What is MongoDB Compass?
+* Compass is MongoDB's Graphical User Interface Product.
+* Never touch admin, config or local, unless support tells you to
+* Compass allows you to see the databases and all of their statistics
+   * Number of documents, total document size, average document size etc.
+* You can export data to specific language types
+* Schema allows you to see information about your data, including when they were created and changed.
+   * Also allows you to see how the files were acquired, sorted by date, or even values.
+* Index allows you to choose default indexes, along with a lot of customizability.
+
+
+Lecture 3: What is MongoDB Compass? (Part 2)
+* Indexes can be used to organize data
+* The more criteria you use the less useful it becomes
+* You can write code to organize your data further, and even check it for issues
+   * This includes making sure certain values are strings.
+* Instructor is way more interested in maps than we are apparently
