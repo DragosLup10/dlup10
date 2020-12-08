@@ -1,0 +1,10 @@
+Team RIID - Ishita Gupta, Dragos Lup, Renee Mui, Ian Chen-Adamczyk
+SoftDev
+K14 -- Form and Function/Echo user output received from html form 
+2020-12-8
+
+> form action="___": the ___ sets the url once the form is submitted
+> request.args: returns the submitted form as a list of tuples. ** only when the form method is GET
+> when the form method is GET, no specification is required for the flask app. 
+> when the form method is POST, you must specify the same method in the flask app
+    > have to change request.args to request.form
