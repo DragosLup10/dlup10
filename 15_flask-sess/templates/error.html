@@ -1,0 +1,31 @@
+<!-- Team RIID - Ishita Gupta, Dragos Lup, Renee Mui, Ian Chen-Adamczyk
+SoftDev
+K15 -- Sessions Greetings/Authenticate user login using a webform and flask and create a session
+2020-12-11 -->
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Error Page</title>
+  </head>
+
+  <body>
+    <h1>
+    Team RIID - Ishita Gupta, Dragos Lup, Renee Mui, Ian Chen-Adamczyk
+    </h1>
+
+    <h2>You did something wrong!</h2>
+    <!-- check what was wrong, username, password, or both -->
+    {% if not user %}
+        <p>The username was incorrect</p>
+    {% endif %}
+
+    {% if not password %}
+        <p>The password was incorrect</p>
+    {% endif %}
+
+    <a href="/">Click to login</a>
+  </body>
+
+</html>

@@ -1,0 +1,6 @@
+- after logging in, Chrome gives a popup saying that the password had been leaked and says to change the password
+    - this is just because of a data leak that happened at Google though
+- redirect can be used in a method to go to another url from the current one
+    - we used redirect to prevent user from accessing pages they do not have access to
+- an error occurs if a SECRET_KEY for the session isn’t specified
+- a SECRET_KEY can be set at the top of the app.py file after app is made

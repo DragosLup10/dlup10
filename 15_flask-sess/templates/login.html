@@ -1,0 +1,30 @@
+<!-- Team RIID - Ishita Gupta, Dragos Lup, Renee Mui, Ian Chen-Adamczyk
+SoftDev
+K15 -- Sessions Greetings/Authenticate user login using a webform and flask and create a session
+2020-12-11 -->
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Login Page</title>
+  </head>
+
+  <body>
+    <h1>
+    Team RIID - Ishita Gupta, Dragos Lup, Renee Mui, Ian Chen-Adamczyk
+    </h1>
+
+<h3>
+Enter your login information below!
+</h3>
+    <form action="/login", method="POST">
+      <input type="text" name="username" placeholder="username">
+      <input type="password" name="password" placeholder="password">
+      <input type="submit" name="submit">
+    </form>
+    <br>
+    <p>{{ msg }}</p>
+  </body>
+
+</html>
