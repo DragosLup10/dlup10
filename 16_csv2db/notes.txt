@@ -1,0 +1,10 @@
+- csv.DictReader returns a dictionary
+    - we needed to loop through each row in the dictionary to print out the stored data
+    - printing out the dictionary without the loop only prints out the location of the dictionary
+- looping through each row from the result of the SELECT command allows us to print out the data stored in a table
+- a semi-colon is needed at the end of each SQL command; otherwise, the terminal will keep expecting more commands
+- Python allows us to assign the values in a list to multiple variables in one line
+    - ex: name, age = row.values()
+- the execute method has to be used each time we want to run a new SQL command
+- instead of concatenating strings and variables, putting f before a string allows us to format it and substitute in variables into it
+    - the variables just have to be put between {}
