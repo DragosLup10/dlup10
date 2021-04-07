@@ -1,0 +1,12 @@
+Team Sad Dragon -- Jonathan Lee, Dragos Lup
+SoftDev pd0
+K20 -- CSS basics
+2021-01-13
+
+- Flexbox really saved us here, along with using % to make sure that each box was scaling properly (and staying on the same line)
+- lack of </p> makes us unable to style the copyright section... I don't know if that was intended? If we could close it then it would be super simple (set it up in body style and override it for everything else)
+- There probably is a way to do it while only closing the <p> by abusing element positions right?
+
+- MODIFYING IT IS TREASON!!! GET THOSE <t>s and <div>s OUTTA HERE!!!
+- "stick with this working rule: Do not modify the HTML" - Mr. Mykolyk, 2021/01/13 12:43 PM
+- versions that stay fully faithful saved as indexfaithful.html

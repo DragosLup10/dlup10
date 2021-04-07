@@ -1,0 +1,11 @@
+Team Decidophobia -- Madelyn Mao, Dragos Lup 
+SoftDev
+K19 -- API key
+2021-04-06
+
+urllib.request.urlopen() urllib.request is a module, urlopen opens a url.
+json.load(url) turns your url into json.
+now_json['url'] gets the image url with json.
+now_json['explanation'] gets the text description with json.
+
+CERTIFICATE_VERIFY_FAILED error can be fixed on MacOS by going into your applications folder, clicking on your python folder, then double clicking on "Install Certificates.command"

@@ -1,0 +1,80 @@
+/*
+Team Sad Dragon -- Jonathan Lee, Dragos Lup
+SoftDev pd0
+K20 -- CSS basics
+2021-01-13
+*/
+* {
+    font-family: sans-serif; /* don't see any serifs here */
+}
+body {
+    width: 100%;
+    background: #919191; /* placeholder */
+    color: #a0a0a0; /* placeholder */
+    text-align: right;
+    display: flex; /* forgive me father for i have sinned */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1 {
+    order: 0;
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 8%; /* this saving me rn */
+    background: #cacaca; /* placeholder */
+    text-align: center;
+    color: #FFF; /* placeholder */
+}
+h2 {
+    order: 2; /* flexbox ordering */
+}
+p {
+    order: 4; /* flexbox ordering */
+
+}
+h3 {
+    order: 1; /* flexbox ordering */
+}
+ul {
+    order: 3; /* flexbox ordering */
+    list-style-type: none; /* remove the bullet points */
+    margin: 0; /* no more bullet point invisible space */
+
+}
+a {
+    color: #dddddd;
+    text-decoration: none;
+}
+h3, ul { /* left elements */
+    width: 20%;
+}
+h2, p { /* right elements */
+    width: 70%;
+}
+
+h1, h2, h3, ul {
+    font-weight: bold; /* these ones pop out! */
+}
+h2, h3, ul, p {
+    background-color: #888888; /* placeholder */
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.5%;
+}
+
+h2, h3, p {
+    color: #000; /* placeholder */
+}
+
+
+
+/* WARNING */
+
+div { /* for the unfaithful */
+    background-color: #6b6b6b;
+    order: 5; /* flexbox ordering */
+    width: 90%;
+    padding: 1%;
+}

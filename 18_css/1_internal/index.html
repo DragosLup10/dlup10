@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Team Sad Dragon -- Jonathan Lee, Dragos Lup
+       SoftDev pd0
+       K20 -- CSS basics
+       2021-01-13
+
+	 WORK FILE for CSS 	
+    -->
+
+  <head>
+    <meta charset="utf-8"/>
+    <title>foo title</title>
+      <style>
+        * {
+            font-family: sans-serif; /* don't see any serifs here */
+        }
+        body {
+            width: 100%;
+            background: #919191; /* placeholder */
+            color: #a0a0a0; /* placeholder */
+            text-align: right;
+            display: flex; /* forgive me father for i have sinned */
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        h1 {
+            order: 0;
+            width: 100%;
+            margin-bottom: 0;
+            margin-right: 8%; /* this saving me rn */
+            background: #cacaca; /* placeholder */
+            text-align: center;
+            color: #FFF; /* placeholder */
+        }
+        h2 {
+            order: 2; /* flexbox ordering */
+        }
+        p {
+            order: 4; /* flexbox ordering */
+        
+        }
+        h3 {
+            order: 1; /* flexbox ordering */
+        }
+        ul {
+            order: 3; /* flexbox ordering */
+            list-style-type: none; /* remove the bullet points */
+            margin: 0; /* no more bullet point invisible space */
+            padding: 0;
+        
+        }
+        a {
+            color: #dddddd;
+            text-decoration: none;
+        }
+        h3, ul { /* left elements */
+            width: 20%;
+        }
+        h2, p { /* right elements */
+            width: 70%;
+        }
+        
+        h1, h2, h3, ul {
+            font-weight: bold; /* these ones pop out! */
+        }
+        h2, h3, ul, p {
+            background-color: #888888; /* placeholder */
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0.5%;
+        }
+        
+        h2, h3, p {
+            color: #000; /* placeholder */
+        }
+        
+        
+        
+        /* WARNING */
+        
+        div { /* for the unfaithful */
+            background-color: #6b6b6b;
+            order: 5; /* flexbox ordering */
+            width: 90%;
+            padding: 1%;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>foo heading 1</h1>
+    <h3>nav foo</h3>
+    <ul>
+      <li><a href="">dis</a></li>
+      <li><a href="">dat</a></li>
+      <li><a href="">de udda ting</a></li>
+    </ul>
+    <h2>main foo heading</h2>
+    <p>정당은 헌법재판소의 심판에 의하여 해산된다. 우호통상항해조약. 국가는 청원에 대하여 심사할 의무를 진다. 국무총리 또는 국무위원이 출석요구를 받은 때에는 국무위원 또는 정부위원으로 하여금 출석·답변하게 할 수 있다.
+
+      재판의 전심절차로서 행정심판을 할 수 있다, 행정각부의 설치·조직과 직무범위는 법률로 정한다. 모든 권력은 국민으로부터 나온다. 모든 국민은 양심의 자유를 가진다.
+      
+      대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다. 국가원로자문회의의 의장은 직전대통령이 된다. 강화조약. 국가는 노인과 청소년의 복지향상을 위한 정책을 실시할 의무를 진다.
+      
+      모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며. 군사법원의 조직·권한 및 재판관의 자격은 법률로 정한다. 헌법재판소에서 법률의 위헌결정. 탄핵소추의 의결을 받은 자는 탄핵심판이 있을 때까지 그 권한행사가 정지된다.
+      
+      1차에 한하여 중임할 수 있다. 위원은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 이 경우 그 명령에 의하여 개정 또는 폐지되었던 법률은 그 명령이 승인을 얻지 못한 때부터 당연히 효력을 회복한다. 피고인의 자백이 고문·폭행·협박·구속의 부당한 장기화 또는 기망 기타의 방법에 의하여 자의로 진술된 것이 아니라고 인정될 때 또는 정식재판에 있어서 피고인의 자백이 그에게 불리한 유일한 증거일 때에는 이를 유죄의 증거로 삼거나 이를 이유로 처벌할 수 없다.
+    </p>
+      <br>
+      <br>
+
+    <div>Copyright &copy; 2016 Clyde "Thluffy" Sinclair</div>
+
+  </body>
+
+</html>
