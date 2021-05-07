@@ -69,7 +69,7 @@ var y = 1;
 var dirx = 1;
 var diry = 1;
 var drawDVD = () => {
-    //console.log("drawDVD invoked...")
+    console.log("drawDVD invoked...")
     window.cancelAnimationFrame( requestID );
     ctx.clearRect( 0, 0, c.width, c.height );
     
@@ -88,7 +88,6 @@ var drawDVD = () => {
     }
     x += dirx;
     y += diry;
-    //console.log(x + " out of " + (c.width - 105));
     ctx.beginPath();
     ctx.drawImage(logo,x,y,105,46);
     ctx.stroke();
