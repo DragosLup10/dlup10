@@ -1,7 +1,7 @@
-// Clyde Sinclair
-// SoftDev pd0
-// K26 -- canvas based JS animation
-// 2021-05-05w
+// Dragos Lup and Alvin Wu
+// SoftDev pd1
+// K27 -- canvas based JS animation
+// 2021-05-07
 
 // model for HTML5 canvas-based animation
 
@@ -63,31 +63,33 @@ var drawDot = () => {
 };
 
 
-
+//x and y represent position of image, dirx and diry represent direction it's moving
 var x = 1;
 var y = 1;
 var dirx = 1;
 var diry = 1;
 var drawDVD = () => {
-    console.log("drawDVD invoked...")
+    //console.log("drawDVD invoked...")
     window.cancelAnimationFrame( requestID );
     ctx.clearRect( 0, 0, c.width, c.height );
     
-    if (x <= 0) {
+    //Bounce functionality
+    if (x <= 0) { //If the image touches the left wall set x-direction to positive
         dirx = 1;
 
-    } else if (x >= c.width - 105){
+    } else if (x >= c.width - 105){ //Otherwise, if it touches the right wall, set x-direction to negative
         dirx = -1;
 
     }
-    if (y <= 0) {
+    if (y <= 0) { //If the image touches the bottom wall, set y-direction to positive
         diry = 1;
 
-    } else if (y >= c.height - 46){
+    } else if (y >= c.height - 46){ //If the image touches the top wall, set y-direction to negative
         diry = -1;
     }
-    x += dirx;
+    x += dirx; //Increment position values based on direction
     y += diry;
+    //console.log(x + " out of " + (c.width - 105));
     ctx.beginPath();
     ctx.drawImage(logo,x,y,105,46);
     ctx.stroke();
