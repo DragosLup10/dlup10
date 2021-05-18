@@ -39,7 +39,7 @@ function drawBoard() {
         // console.log(requestID);
         if (snekCollide()) gameEnd();
         else requestID = window.requestAnimationFrame(drawBoard); //Next Frame
-    }}, 500)
+    }}, 50)
 }
 
 // Check for self death
