@@ -1,5 +1,13 @@
-Idea: long owl snake game
+Team Candian Owls: Karl Hernandez, Dragos, Arib
+SoftDev
+K30 -- JSorcery
+2021-05-15
 
-no  clue why this stuff dont work chief
-karls fault, he no want to fixy
-!!!
+We made a 99% working version of snake using only js and html (very cool i know).
+
+Something to know:
+	- It works 99% of the time. We have no idea why it doesn't the other one percent, but we have been working on this for over a hour.
+	- We used event.keyCode, but this function is deprecated unfortunately, however it still works. It was the easiest solution we could find.
+	- This is not production ready
+	- yes
+	- pls give good grade thx
